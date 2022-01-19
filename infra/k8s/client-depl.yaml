@@ -15,6 +15,10 @@ spec:
       containers:
         - name: client
           image: swistek/client
+          resources:
+            limits:
+              memory: '1024Mi'
+              cpu: '1024m'
 ---
 apiVersion: v1
 kind: Service
